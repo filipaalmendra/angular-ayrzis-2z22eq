@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Pets } from './pets';
+import { Pet } from './pet';
 import { PETS } from './mock-pets';
 
 @Injectable({
@@ -9,7 +9,7 @@ export class PetService {
   constructor() {}
 
   //metodo que devolve a lista de Pets
-  getPets(): Pets[] {
+  getPets(): Pet[] {
     return PETS;
   }
 }
