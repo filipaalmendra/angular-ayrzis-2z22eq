@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PetService } from '../pet.service';
-import { Pet } from './pet'; //tipo Pets
+import { Pet } from '../pet'; //tipo Pets
 
 @Component({
   selector: 'app-pets',
@@ -8,7 +8,7 @@ import { Pet } from './pet'; //tipo Pets
   styleUrls: ['./pets.component.css'],
 })
 export class PetsComponent implements OnInit {
-  pets: Pet[];
+  pets: Pet[] = [];
 
   constructor(private petsService: PetService) {} //DI
 
