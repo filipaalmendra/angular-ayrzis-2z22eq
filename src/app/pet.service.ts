@@ -3,12 +3,11 @@ import { Pet } from './pet';
 import { PETS } from './mock-pets';
 
 @Injectable({
-  providedIn: 'root', //SINGLETON
+  providedIn: 'root',
 })
 export class PetService {
   constructor() {}
 
-  //metodo que devolve a lista de Pets
   getPets(): Pet[] {
     return PETS;
   }

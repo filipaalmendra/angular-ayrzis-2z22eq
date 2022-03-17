@@ -10,13 +10,12 @@ import { Pet } from '../pet'; //tipo Pets
 export class PetsComponent implements OnInit {
   pets: Pet[] = [];
 
-  constructor(private petsService: PetService) {} //DI
+  constructor(private petsService: PetService) {}
 
   ngOnInit() {
-    this.getPets(); //fazer chamada ah funcao
+    this.getPets();
   }
 
-  //funcao que retorna a lista de Pets atraves do service
   getPets(): void {
     this.pets = this.petsService.getPets();
   }
